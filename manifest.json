@@ -3,7 +3,7 @@
   "version": "1.0",
   "manifest_version": 3,
   "description": "Quick Currency Exchange",
-  "browser_action": {
+  "action": {
     "default_icon": "icon.jpg",
     "default_popup": "index.html"
   }
