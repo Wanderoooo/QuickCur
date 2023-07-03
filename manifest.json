@@ -4,7 +4,7 @@
   "manifest_version": 3,
   "description": "Quick Currency Exchange",
   "action": {
-    "default_icon": "icon.jpg",
+    "default_icon": "icon.png",
     "default_popup": "index.html"
   }
 }

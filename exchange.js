@@ -1,7 +1,7 @@
 const amount = document.getElementById('amount');
 const currency = document.getElementById('currency');
 const convert = document.getElementById('convert');
-const result = document.getElementById('result');
+const resultConvert = document.getElementById('result');
 
 const apiKey="OskKJsUE/CEHnN38qJ8JWw==ZMJyToylj1ufmgs8"
 const apiUrl="https://api.api-ninjas.com/v1/exchangerate?pair=USD_"
@@ -19,12 +19,12 @@ convert.addEventListener('click', () => {
   .then(response => response.json())
   .then(data => {
     const rate = data.rate;
-    const result = amountTotal * rate;
-    result.innerHTML = `${amount} ${currency} = ${result.toFixed(2)} USD`
+    const resultConvert = amountTotal * rate;
+    resultConvert.innerHTML = `${amount} ${currency} = ${result.toFixed(2)} USD`
   })
   .catch(error => {
     console.error('Request failed', error);
-    result.innerHTML = 'An error occurred please try again later.'
+    resultConvert.innerHTML = 'An error occurred please try again later.'
   })
 
 })
