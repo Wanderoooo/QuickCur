@@ -18,7 +18,7 @@ convert.addEventListener('click', () => {
   })
   .then(response => response.json())
   .then(data => {
-    const rate = data.rate;
+    const rate = data.exchange_rate;
     const resultConvert = amountTotal * rate;
     resultConvert.innerHTML = `${amount} ${currency} = ${result.toFixed(2)} USD`
   })
