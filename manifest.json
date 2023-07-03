@@ -1,0 +1,10 @@
+{
+  "name": "QuickCur",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Quick Currency Exchange",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  }
+}
